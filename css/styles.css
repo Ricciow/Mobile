@@ -1,0 +1,229 @@
+:root {
+    --text-white: #f0f0f0;
+    --text-black: #000000;
+
+    --bg-color: #f4fafc;
+    --bg-color-secondary: #e9f6fa;
+    --border-color: #d2ecf4;
+
+    /* Espaçamentos */
+    --xl: 2rem;
+    --lg: 1.5rem;
+    --md: 1rem;
+    --sm: 0.5rem;
+    --xs: 0.25rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial', sans-serif;
+}
+
+.header_link {
+    text-decoration: none;
+    color: var(--text-black);
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--bg-color-secondary);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* header */
+header {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "logo nav"
+        "search search";
+    gap: var(--sm);
+    position: sticky;
+    top: 0;
+
+    background-color: var(--bg-color);
+    padding: var(--sm);
+    border-bottom: 1px solid var(--border-color);
+
+    align-items: center;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.header_nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    gap: var(--sm);
+}
+
+
+.profile_link {
+    grid-area: profile;
+}
+
+/* Botão do menu hamburguer */
+.menu_button {
+    z-index: 1100;
+    background: none;
+    border: none;
+}
+
+.header_menu {
+    list-style: none;
+}
+
+.menu_button.ativo + .header_menu {
+    display: flex;
+}
+
+/* Alternar entre os ícones */
+.menu_icon {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+}
+
+.close_menu_icon {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+}
+
+.menu_button.ativo .menu_icon {
+    display: none;
+}
+
+.menu_button.ativo .close_menu_icon {
+    display: flex;
+}
+
+/* Campo de busca !search*/
+.search {
+    grid-area: search;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem;
+}
+
+.search_input {
+    border: none;
+    background: none;
+    flex: 1;
+    padding: var(--sm);
+}
+
+.search_input:focus {
+    outline: none;
+}
+
+.search_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search_icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* somente mobile */
+@media (max-width: 767px) {
+    /* Sumir com o ícone do perfil*/
+    .profile_link {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    /* Sumir com o menu se não estiver ativo */
+    .header_menu {
+        display: none;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-color: var(--bg-color);
+        border-bottom: 1px solid var(--border-color);
+        z-index: 1000;
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding-top: 4rem;
+    }
+
+    .header_menu li{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .header_menu li a{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: var(--sm) 0 var(--sm) 0;
+
+        border-top: 1px solid var(--border-color);
+    }
+}
+
+/* tablet */
+@media(min-width: 768px) {
+    header {
+        grid-template-columns: auto auto 1fr auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo nav search profile";
+    }
+
+    /* Sumir com o link do perfil */
+    .profile_link_menu {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    .menu_button {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    .header_menu {
+        display: flex;
+        justify-content: center;
+        gap: var(--sm);
+    }
+
+    .profile_link {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+    }
+}    
+
+/* desktop */
+@media (min-width: 1120px) {
+
+}

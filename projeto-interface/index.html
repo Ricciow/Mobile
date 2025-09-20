@@ -5,44 +5,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"/>
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <script src="../js/script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1 class="logo">HABIT</h1>
+        <h1 class="logo"><a>HABIT</a></h1>
 
-        <nav class>
+        <nav class="header_nav">
             <a href="#" class="header_link">Assinar</a>
             <button 
                 class="menu_button"
                 aria-label="Abrir Menu"
                 aria-expanded="false"
                 aria-controls="header_menu"
+                id="menu_hamburguer"
             >
-                <img src="assets/menu.svg" alt="menu">
-                <img src="assets/close.svg" alt="fechar">
+                <img src="../assets/menu.svg" alt="menu" class="menu_icon">
+                <img src="../assets/close.svg" alt="fechar_menu" class="close_menu_icon">
             </button>
             <ul id="header_menu" class="header_menu">
                 <li><a href="#" class="header_link">Inicio</a></li>
                 <li><a href="#" class="header_link">Paginas</a></li>
                 <li><a href="#" class="header_link">Destaques</a></li>
                 <li><a href="#" class="header_link">Admin</a></li>
+                <li><a href="#" class="header_link profile_link_menu">Perfil</a></li>
             </ul>
         </nav>
 
-        <div class="search">
-            <input type="text" placeholder="Pesquisar..." />
-            <button>Buscar</button>
-        </div>
+        <form class="search card" action="#" method="GET" role="search" aria-label="Pesquisar no site">
+            <input type="text" placeholder="Pesquisar..." name="q" class="search_input"/>
+            <button type="submit" class="search_button" aria-label="Buscar">
+                <img src="../assets/search.svg" alt="buscar" class="search_icon">
+            </button>
+        </form>
 
-        <a href="/perfil" aria-label="Acessar seu perfil">
-            <img src="assets/avatar.png" alt="Foto do perfil">
+        <a href="#" aria-label="Acessar seu perfil" class="profile_link">
+            <img src="../assets/user.png" alt="Foto do perfil">
         </a>
     </header>
     <main>
-
+        
     </main>
     <footer>
 
