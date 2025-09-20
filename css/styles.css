@@ -1,5 +1,6 @@
 :root {
     --text-white: #f0f0f0;
+    --text-gray: #555555;
     --text-black: #000000;
 
     --bg-color: #f4fafc;
@@ -84,10 +85,6 @@ header {
     list-style: none;
 }
 
-.menu_button.ativo + .header_menu {
-    display: flex;
-}
-
 /* Alternar entre os ícones */
 .menu_icon {
     display: flex;
@@ -126,6 +123,10 @@ header {
     padding: var(--sm);
 }
 
+.search_input::placeholder {
+    color: var(--text-gray);
+}
+
 .search_input:focus {
     outline: none;
 }
@@ -153,13 +154,14 @@ header {
     /* Sumir com o menu se não estiver ativo */
     .header_menu {
         display: none;
-        
+        visibility: hidden;
+
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         background-color: var(--bg-color);
-        border-bottom: 1px solid var(--border-color);
+        border-bottom: 2px solid var(--border-color);
         z-index: 1000;
         
         flex-direction: column;
@@ -167,6 +169,11 @@ header {
         justify-content: center;
 
         padding-top: 4rem;
+    }
+
+    .menu_button.ativo + .header_menu {
+        display: flex;
+        visibility: visible;
     }
 
     .header_menu li{
