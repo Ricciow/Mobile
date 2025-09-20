@@ -13,6 +13,10 @@
     --md: 1rem;
     --sm: 0.5rem;
     --xs: 0.25rem;
+
+    --hamburger-icon-size: 2rem;
+    --profile-icon-size: 2rem;
+    --search-icon-size: 1.5rem;
 }
 
 * {
@@ -88,14 +92,14 @@ header {
 /* Alternar entre os ícones */
 .menu_icon {
     display: flex;
-    width: 2rem;
-    height: 2rem;
+    width: var(--hamburger-icon-size);
+    height: var(--hamburger-icon-size);
 }
 
 .close_menu_icon {
     display: none;
-    width: 2rem;
-    height: 2rem;
+    width: var(--hamburger-icon-size);
+    height: var(--hamburger-icon-size);
 }
 
 .menu_button.ativo .menu_icon {
@@ -138,8 +142,9 @@ header {
 }
 
 .search_icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    padding-right: var(--xs);
+    width: var(--search-icon-size);
+    height: var(--search-icon-size);
 }
 
 /* somente mobile */
@@ -228,8 +233,8 @@ header {
 
     .profile_link {
         display: flex;
-        width: 2rem;
-        height: 2rem;
+        width: var(--profile-icon-size);
+        height: var(--profile-icon-size);
     }
 }    
 
