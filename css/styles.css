@@ -1,0 +1,244 @@
+:root {
+    --text-white: #f0f0f0;
+    --text-gray: #555555;
+    --text-black: #000000;
+
+    --bg-color: #f4fafc;
+    --bg-color-secondary: #e9f6fa;
+    --border-color: #d2ecf4;
+
+    /* Espaçamentos */
+    --xl: 2rem;
+    --lg: 1.5rem;
+    --md: 1rem;
+    --sm: 0.5rem;
+    --xs: 0.25rem;
+
+    --hamburger-icon-size: 2rem;
+    --profile-icon-size: 2rem;
+    --search-icon-size: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial', sans-serif;
+}
+
+.header_link {
+    text-decoration: none;
+    color: var(--text-black);
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--bg-color-secondary);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* header */
+header {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "logo nav"
+        "search search";
+    gap: var(--sm);
+    position: sticky;
+    top: 0;
+
+    background-color: var(--bg-color);
+    padding: var(--sm);
+    border-bottom: 1px solid var(--border-color);
+
+    align-items: center;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.header_nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    gap: var(--sm);
+}
+
+
+.profile_link {
+    grid-area: profile;
+}
+
+/* Botão do menu hamburguer */
+.menu_button {
+    z-index: 1100;
+    background: none;
+    border: none;
+}
+
+.header_menu {
+    list-style: none;
+}
+
+/* Alternar entre os ícones */
+.menu_icon {
+    display: flex;
+    width: var(--hamburger-icon-size);
+    height: var(--hamburger-icon-size);
+}
+
+.close_menu_icon {
+    display: none;
+    width: var(--hamburger-icon-size);
+    height: var(--hamburger-icon-size);
+}
+
+.menu_button.ativo .menu_icon {
+    display: none;
+}
+
+.menu_button.ativo .close_menu_icon {
+    display: flex;
+}
+
+/* Campo de busca !search*/
+.search {
+    grid-area: search;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem;
+}
+
+.search_input {
+    border: none;
+    background: none;
+    flex: 1;
+    padding: var(--sm);
+}
+
+.search_input::placeholder {
+    color: var(--text-gray);
+}
+
+.search_input:focus {
+    outline: none;
+}
+
+.search_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search_icon {
+    padding-right: var(--xs);
+    width: var(--search-icon-size);
+    height: var(--search-icon-size);
+}
+
+/* somente mobile */
+@media (max-width: 767px) {
+    /* Sumir com o ícone do perfil*/
+    .profile_link {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    /* Sumir com o menu se não estiver ativo */
+    .header_menu {
+        display: flex;
+        visibility: hidden;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-color: var(--bg-color);
+        border-bottom: 2px solid var(--border-color);
+        z-index: 1000;
+        
+        transform: translateY(-100%);
+        transition: transform 0.2s ease-in-out;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding-top: 4rem;
+    }
+
+    .menu_button.ativo + .header_menu {
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .header_menu li{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .header_menu li a{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: var(--sm) 0 var(--sm) 0;
+
+        border-top: 1px solid var(--border-color);
+    }
+}
+
+/* tablet */
+@media(min-width: 768px) {
+    header {
+        grid-template-columns: auto auto 1fr auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo nav search profile";
+    }
+
+    /* Sumir com o link do perfil */
+    .profile_link_menu {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    .menu_button {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    .header_menu {
+        display: flex;
+        justify-content: center;
+        gap: var(--sm);
+    }
+
+    .profile_link {
+        display: flex;
+        width: var(--profile-icon-size);
+        height: var(--profile-icon-size);
+    }
+}    
+
+/* desktop */
+@media (min-width: 1120px) {
+
+}
