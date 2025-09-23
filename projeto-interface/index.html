@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/script.js" defer></script>
 </head>
 
@@ -15,13 +15,8 @@
 
         <nav class="header_nav" aria-label="Menu principal">
             <a href="#" class="header_link">Assinar</a>
-            <button 
-                class="menu_button"
-                aria-label="Abrir Menu"
-                aria-expanded="false"
-                aria-controls="header_menu"
-                id="menu_hamburguer"
-            >
+            <button class="menu_button" aria-label="Abrir Menu" aria-expanded="false" aria-controls="header_menu"
+                id="menu_hamburguer">
                 <img src="./assets/menu.svg" alt="menu" class="menu_icon">
                 <img src="./assets/close.svg" alt="fechar_menu" class="close_menu_icon">
             </button>
@@ -35,7 +30,7 @@
         </nav>
 
         <form class="search card" action="#" method="GET" role="search" aria-label="Pesquisar no site">
-            <input type="text" placeholder="Pesquisar..." name="q" class="search_input"/>
+            <input type="text" placeholder="Pesquisar..." name="q" class="search_input" />
             <button type="submit" class="search_button" aria-label="Buscar">
                 <img src="./assets/search.svg" alt="buscar" class="search_icon">
             </button>
@@ -50,7 +45,8 @@
         <section aria-labelledby="introduction_title" class="introduction">
             <div class="introduction_texts">
                 <h1 id="introduction_title" class="introduction_title">Navegue por tópicos de interesse</h1>
-                <p class="introduction_text">Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
+                <p class="introduction_text">Descubra conteúdos por categorias, posts em destaque e as escolhas do
+                    editor.</p>
                 <div class="introduction_buttons">
                     <button class="newsletter_button">Assine a newsletter</button>
                     <a href="#categories" class="categories_link">Explorar categorias</a>
@@ -62,24 +58,24 @@
         </section>
 
         <section aria-labelledby="popular_categories_title" class="popular_categories">
-            <h2 id="popular_categories_title">Categorias Populares</h2>
+            <h2 id="popular_categories_title" class="popular_categories_title">Categorias Populares</h2>
             <nav aria-label="Categorias populares" class="popular_categories_list">
-                <div class="popular_category">
-                    <img src="assets/work_category.png" alt="Categoria de trabalho">
-                    <p>Trabalho</p>
-                </div>
-                <div class="popular_category">
-                    <img src="assets/work_category.png" alt="Categoria de livros">
-                    <p>Livros</p>
-                </div>
-                <div class="popular_category">
-                    <img src="assets/work_category.png" alt="Categoria de technologia">
-                    <p>Tecnologia</p>
-                </div>
+                <a href="#" aria-label="Livros" class="popular_category card">
+                    <img src="assets/trabalho.png" alt="Categoria de trabalho">
+                    <p class="category_text card">Trabalho</p>
+                </a>
+                <a href="#" aria-label="Livros" class="popular_category card">
+                    <img src="assets/livros.png" alt="Categoria de livros">
+                    <p class="category_text card">Livros</p>
+                </a>
+                <a href="#" aria-label="Tecnologia" class="popular_category card">
+                    <img src="assets/tecnologia.png" alt="Categoria de tecnologia">
+                    <p class="category_text card">Tecnologia</p>
+                </a>
             </nav>
         </section>
     </main>
-    
+
     <footer>
         <nav class="socials" aria-label="Redes sociais">
             <a href="#" class="social_link" aria-label="Link para o Instagram">

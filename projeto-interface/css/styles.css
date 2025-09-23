@@ -215,6 +215,7 @@ main {
 
 .introduction_text {
     color: var(--text-gray);
+    font-size: var(--font-normal);
     padding: var(--sm);
 }
 
@@ -266,6 +267,65 @@ main {
 
     padding: var(--sm) var(--md);
     cursor: pointer;
+}
+
+/* Popular Categories */
+.popular_categories {
+    grid-area: popular_categories;
+
+    padding: 0 var(--md);
+
+    display: flex;
+    flex-direction: column;
+
+    max-height: 10rem;
+}
+
+.popular_categories_title {
+    font-size: var(--font-subtitle);
+    margin-bottom: var(--sm);
+}
+
+.popular_categories_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    
+    flex-direction: column;
+    gap: var(--sm);
+}
+
+.popular_category {
+    position: relative;
+
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.popular_category img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.popular_category p {
+    position: absolute;
+    padding: var(--sm);
+    left: var(--sm);
+    bottom: var(--sm);
+    z-index: 1999;
+    text-align: center;
+    font-size: var(--font-normal);
+    color: var(--text-black);
+    font-weight: bold;
+}
+
+.category_text {
+    font-size: var(--font-normal);
 }
 
 /** footer */
@@ -358,6 +418,12 @@ footer {
 
         border-top: var(--border-width) solid var(--border-color);
     }
+
+    /** main - Index */
+    /* popular categories */
+    .popular_category {
+        width: 100%;
+    }
 }
 
 /* tablet */
@@ -395,10 +461,19 @@ footer {
     }
 
     /** main - Index */
+    /* Introdução */
     .introduction_image {
         margin-left: var(--lg);
     }
 
+    /*popular categories */
+    .popular_categories_list {
+        flex-direction: row;
+    }
+
+    .popular_category {
+        max-height: 10rem;
+    }
 }    
 
 /* desktop */
