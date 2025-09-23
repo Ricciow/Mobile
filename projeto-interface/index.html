@@ -13,7 +13,7 @@
     <header>
         <h1 class="logo"><a>HABIT</a></h1>
 
-        <nav class="header_nav">
+        <nav class="header_nav" aria-label="Menu principal">
             <a href="#" class="header_link">Assinar</a>
             <button 
                 class="menu_button"
@@ -46,13 +46,18 @@
         </a>
     </header>
 
-    <main>
-        <section aria-labelledby="introduction_title">
-            <h1 id="introduction_title">Navegue por tópicos de interesse</h1>
-            <p>Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
-            <div>
-                <button>Assine a newsletter</button>
-                <a href="#categories">Explorar categorias</a>
+    <main class="main_index">
+        <section aria-labelledby="introduction_title" class="introduction">
+            <div class="introduction_texts">
+                <h1 id="introduction_title" class="introduction_title">Navegue por tópicos de interesse</h1>
+                <p class="introduction_text">Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
+                <div class="introduction_buttons">
+                    <button class="newsletter_button">Assine a newsletter</button>
+                    <a href="#categories" class="categories_link">Explorar categorias</a>
+                </div>
+            </div>
+            <div class="introduction_image card">
+                <img src="./assets/introduction.png" alt="Apresentação do site">
             </div>
         </section>
     </main>
