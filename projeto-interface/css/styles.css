@@ -404,8 +404,11 @@ footer {
     grid-template-areas: 
     "top_posts"
     "editor_picks";
+
+    gap: var(--md);
 }
 
+/*top posts*/
 .top_posts {
     grid-area: top_posts;
     display: flex;
@@ -461,6 +464,9 @@ footer {
     object-fit: cover;
     border-radius: var(--border-radius);
 }
+
+/* Escolhas do editor */
+
 
 /* somente mobile */
 @media (max-width: 767px) {
