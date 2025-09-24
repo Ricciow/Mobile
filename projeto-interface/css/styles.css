@@ -5,6 +5,7 @@
 
     --bg-color: #f4fafc;
     --bg-color-secondary: #e9f6fa;
+    --bg-color-secondary-hover: #9cd4e7;
     --border-color: #d2ecf4;
 
     --button-primary: #03698c;
@@ -277,8 +278,6 @@ main {
 
     display: flex;
     flex-direction: column;
-
-    max-height: 10rem;
 }
 
 .popular_categories_title {
@@ -287,22 +286,23 @@ main {
 }
 
 .popular_categories_list {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
-
-    flex-wrap: wrap;
     
-    flex-direction: column;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr;
+
     gap: var(--sm);
 }
 
 .popular_category {
     position: relative;
-
     display: flex;
     flex: 1;
     overflow: hidden;
+
+    max-height: 10rem;
 }
 
 .popular_category img {
@@ -326,6 +326,37 @@ main {
 
 .category_text {
     font-size: var(--font-normal);
+}
+
+/* Categories */
+
+.categories {
+    grid-area: categories;
+    margin: 0 var(--md);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--sm);
+}
+
+.categories_internal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--sm);
+}
+
+.category {
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-black);
+    padding: var(--md);
+    font-size: var(--font-section);
+    font-weight: bold;
+}
+
+.category:hover {
+    background-color: var(--bg-color-secondary-hover);
 }
 
 /** footer */
@@ -423,6 +454,11 @@ footer {
     /* popular categories */
     .popular_category {
         width: 100%;
+    }
+
+    .popular_categories_list {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
     }
 }
 
