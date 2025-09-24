@@ -59,8 +59,7 @@
 
 body {
     display: grid;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
@@ -197,8 +196,8 @@ main {
         "popular_categories"
         "categories"
         "bottom_area";
-
     gap: var(--md);
+    margin: 0 var(--md);
 }
 
 .introduction {
@@ -278,9 +277,6 @@ main {
 /* Popular Categories */
 .popular_categories {
     grid-area: popular_categories;
-
-    padding: 0 var(--md);
-
     display: flex;
     flex-direction: column;
 }
@@ -337,7 +333,6 @@ main {
 
 .categories {
     grid-area: categories;
-    margin: 0 var(--md);
 
     display: flex;
     flex-direction: column;
@@ -400,7 +395,6 @@ footer {
 /*? Bottom area */
 .bottom_area {
     grid-area: bottom_area;
-    margin: 0 var(--md);
 
     display: grid;
     grid-template-columns: 1fr;
