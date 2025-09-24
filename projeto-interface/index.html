@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <h1 class="logo"><a>HABIT</a></h1>
+        <h1 class="logo"><a href="#" aria-label="Ir para a home" class="logo_link">HABIT</a></h1>
 
         <nav class="header_nav" aria-label="Menu principal">
             <a href="#" class="header_link">Assinar</a>
@@ -28,13 +28,15 @@
                 <li><a href="#" class="header_link profile_link_menu">Perfil</a></li>
             </ul>
         </nav>
-
-        <form class="search card" action="#" method="GET" role="search" aria-label="Pesquisar no site">
-            <input type="text" placeholder="Pesquisar..." name="q" class="search_input" />
-            <button type="submit" class="search_button" aria-label="Buscar">
-                <img src="./assets/search.svg" alt="buscar" class="search_icon">
-            </button>
-        </form>
+        
+        <div class="search_area">
+            <form class="search card" action="#" method="GET" role="search" aria-label="Pesquisar no site">
+                <input type="text" placeholder="Pesquisar..." name="q" class="search_input" />
+                <button type="submit" class="search_button" aria-label="Buscar">
+                    <img src="./assets/search.svg" alt="buscar" class="search_icon">
+                </button>
+            </form>
+        </div>
 
         <a href="#" aria-label="Acessar seu perfil" class="profile_link">
             <img src="./assets/user.png" alt="Foto do perfil">
@@ -58,22 +60,84 @@
         </section>
 
         <section aria-labelledby="popular_categories_title" class="popular_categories">
-            <h2 id="popular_categories_title" class="popular_categories_title">Categorias Populares</h2>
+            <h2 id="popular_categories_title" class="subtitle">Categorias Populares</h2>
             <nav aria-label="Categorias populares" class="popular_categories_list">
                 <a href="#" aria-label="Livros" class="popular_category card">
                     <img src="assets/trabalho.png" alt="Categoria de trabalho">
+                    <div class="popular_category_overlay"></div>
                     <p class="category_text card">Trabalho</p>
                 </a>
                 <a href="#" aria-label="Livros" class="popular_category card">
                     <img src="assets/livros.png" alt="Categoria de livros">
+                    <div class="popular_category_overlay"></div>
                     <p class="category_text card">Livros</p>
                 </a>
                 <a href="#" aria-label="Tecnologia" class="popular_category card">
                     <img src="assets/tecnologia.png" alt="Categoria de tecnologia">
+                    <div class="popular_category_overlay"></div>
                     <p class="category_text card">Tecnologia</p>
                 </a>
             </nav>
         </section>
+
+        <section aria-labelledby="categories" class="categories">
+            <h2 id="categories" class="subtitle">Todas as Categorias</h2>
+            <nav aria-label="Todas as categorias" class="categories_internal">
+                <a href="#" aria-label="Negócios" class="category card">Trabalho</a>
+                <a href="#" aria-label="Tecnologia" class="category card">Tecnologia</a>
+                <a href="#" aria-label="Produtividade" class="category card">Produtividade</a>
+                <a href="#" aria-label="Filmes" class="category card">Filmes</a>
+                <a href="#" aria-label="Lifestyle" class="category card">Lifestyle</a>
+                <a href="#" aria-label="Educação" class="category card">Educação</a>
+                <a href="#" aria-label="Mailing" class="category card">Mailing</a>
+                <a href="#" aria-label="eCommerce" class="category card">eCommerce</a>
+                <a href="#" aria-label="Alimentação" class="category card">Alimentação</a>
+                <a href="#" aria-label="Social" class="category card">Social</a>
+            </nav>
+        </section>
+
+        <div class="bottom_area">
+            <section aria-labelledby="destaques" class="top_posts">
+                <h2 id="destaques" class="subtitle">Postagens em Destaque</h2>
+                <nav aria-label="Postagens em destaque" class="top_posts_list">
+                    <a href="#" aria-labelledby="post_1">
+                        <article class="top_post card">
+                            <div class="post_image">
+                                <img src="assets/design.png" alt="Postagem 1">
+                            </div>
+                            <div class="post_texts">
+                                <p>31 Jul 2025 &bullet; Destaque</p>
+                                <h3 id="post_1">Erros de Design que Todos Devem Evitar</h3>
+                                <p>3 min</p>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" aria_labelledby="post_2">
+                        <article class="top_post card">
+                            <div class="post_image">
+                                <img src="assets/empresas.png" alt="Postagem 1">
+                            </div>
+                            <div class="post_texts">
+                                <p>31 Jul 2025 &bullet; Destaque</p>
+                                <h3 id="post_2">As maiores Empresas por Receita</h3>
+                            </div>
+                        </article>
+                    </a>
+                </nav>
+            </section>
+
+            <aside aria-labelledby="escolhas" class="editor_picks">
+                <h2 id="escolhas" class="subtitle">Escolhas do editor</h2>
+                <nav aria-label="Escolhas do editor" class="card">
+                    <ul class="editor_picks_list">
+                        <li><a href="#">O uso negativo da Internet</a></li>
+                        <li><a href="#">Segredo do brainstorm</a></li>
+                        <li><a href="#">Escalar para pequenos negócios</a></li>
+                        <li><a href="#">O futuro do trabalho remoto</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
     </main>
 
     <footer>
