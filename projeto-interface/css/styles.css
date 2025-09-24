@@ -85,6 +85,7 @@ header {
     gap: var(--sm);
     position: sticky;
     top: 0;
+    z-index: 10000;
 
     background-color: var(--bg-color);
     padding: var(--sm);
@@ -111,7 +112,7 @@ header {
 
 /* Botão do menu hamburguer */
 .menu_button {
-    z-index: 1100;
+    z-index: 10001;
     background: none;
     border: none;
 }
@@ -548,6 +549,10 @@ footer {
     /* top posts*/
     .top_post {
         flex-direction: column;
+    }
+
+    .post_texts {
+        width: 100%;
     }
 
     .post_image {
