@@ -47,7 +47,6 @@
 }
 
 .header_link {
-    text-decoration: none;
     color: var(--text-black);
 }
 
@@ -67,6 +66,10 @@ body {
         "header"
         "main"
         "footer";
+}
+
+a {
+    text-decoration: none;
 }
 
 /** header */
@@ -264,7 +267,6 @@ main {
 }
 
 .categories_link {
-    text-decoration: none;
     color: var(--button-primary);
     font-size: var(--font-normal);
 
@@ -347,7 +349,6 @@ main {
 }
 
 .category {
-    text-decoration: none;
     text-align: center;
     color: var(--text-black);
     padding: var(--md);
@@ -410,11 +411,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: var(--sm);
-}
-
-
-.top_posts a {
-    text-decoration: none;
 }
 
 .top_posts_list {
