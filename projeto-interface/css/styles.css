@@ -264,7 +264,6 @@ main {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: var(--border-radius);
 }
 
 .introduction_buttons {
@@ -365,7 +364,6 @@ main {
     position: relative;
     width: 100%;
     object-fit: cover;
-    border-radius: var(--border-radius);
 }
 
 .popular_category p {
