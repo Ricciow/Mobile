@@ -7,10 +7,12 @@
     --bg-color-secondary: #e9f6fa;
     --bg-color-secondary-hover: #9cd4e7;
     --border-color: #d2ecf4;
+    --border-color-hover: #3facd0;
 
     --box-shadow-color: #00121883;
 
     --button-primary: #03698c;
+    --button-hover: #024b64;
     --base-image-width: 40rem;
 
     --main-color: #fff;
@@ -101,6 +103,7 @@ header {
 
 .logo {
     grid-area: logo;
+    font-size: var(--font-title);
 }
 
 .header_nav {
@@ -274,8 +277,15 @@ main {
     cursor: pointer;
 }
 
+.newsletter_button:hover {
+    background-color: var(--button-hover);
+    border: var(--border-width) solid var(--button-hover);
+    padding: var(--sm) var(--md);
+}
+
 .categories_link {
     color: var(--button-primary);
+    background-color: var(--bg-color);
     font-size: var(--font-normal);
 
     border: var(--border-width) solid var(--button-primary);
@@ -283,6 +293,11 @@ main {
 
     padding: var(--sm) var(--md);
     cursor: pointer;
+}
+
+.categories_link:hover {
+    background-color: var(--bg-color-secondary-hover);
+    color: var(--text-black);
 }
 
 /* Popular Categories */
@@ -366,6 +381,7 @@ main {
 
 .category:hover {
     background-color: var(--bg-color-secondary-hover);
+    border: var(--border-width) solid var(--border-color-hover);
 }
 
 /** footer */
@@ -437,6 +453,7 @@ footer {
 
 .top_post:hover {
     background-color: var(--bg-color-secondary-hover);
+    border: var(--border-width) solid var(--border-color-hover);
 }
 
 .post_texts {
