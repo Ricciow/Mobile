@@ -210,7 +210,7 @@ main {
 
     text-align: center;
     color: var(--text-black);
-    padding: 0 var(--md);
+    padding: var(--md) var(--md) 0 var(--md);
 }
 
 .introduction_title {
