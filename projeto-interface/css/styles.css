@@ -54,6 +54,11 @@
     color: var(--text-black);
 }
 
+.header_link:hover {
+    text-decoration: underline;
+    color: var(--text-gray);
+}
+
 .card {
     border: var(--border-width) solid var(--border-color);
     border-radius: var(--border-radius);
@@ -104,6 +109,10 @@ header {
 .logo {
     grid-area: logo;
     font-size: var(--font-title);
+}
+
+.logo_link {
+    color: var(--text-black);
 }
 
 .header_nav {
@@ -593,6 +602,12 @@ footer {
 
         border-top: var(--border-width) solid var(--border-color);
     }
+
+    .header_link:hover {
+        text-decoration: none;
+        color: var(--text-black);
+    }
+
 
     /** main - Index */
     /* popular categories */
