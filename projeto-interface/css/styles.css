@@ -139,9 +139,14 @@ header {
 }
 
 /* Campo de busca */
-.search {
+.search_area {
     grid-area: search;
+    display: flex;
+    justify-content: flex-end;
+}
 
+.search {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -186,7 +191,7 @@ main {
 .main_index {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto 1fr;
     grid-template-areas: 
         "introduction"
         "popular_categories"
@@ -522,6 +527,11 @@ footer {
 
 /* desktop */
 @media (min-width: 1120px) {
+    /** header */
+    .search {
+        max-width: 40rem;
+    }
+
     /** main - Index */
     .introduction {
         flex-direction: row;
