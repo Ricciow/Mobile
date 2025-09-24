@@ -342,7 +342,6 @@ main {
 .categories_internal {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: var(--sm);
 }
 
@@ -351,7 +350,7 @@ main {
     text-align: center;
     color: var(--text-black);
     padding: var(--md);
-    font-size: var(--font-section);
+    font-size: var(--font-normal);
     font-weight: bold;
 }
 
@@ -459,6 +458,15 @@ footer {
     .popular_categories_list {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
+    }
+
+    /* categories */
+    .categories_internal {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .category {
+        padding: var(--sm);
     }
 }
 
