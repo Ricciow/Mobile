@@ -237,17 +237,6 @@ header {
 
 .search_input {
     border: none;
-    background: none;
-    flex: 1;
-    padding: var(--sm);
-}
-
-.search_input::placeholder {
-    color: var(--text-gray);
-}
-
-.search_input:focus {
-    outline: none;
 }
 
 .search_button {
