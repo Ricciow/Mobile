@@ -620,7 +620,7 @@ main {
     }
 }
 
-/** Main - Login */
+/** Main - Login/Cadastro */
 .main_login {
     display: flex;
     justify-content: center;
@@ -686,6 +686,17 @@ main {
 .login_links a:hover {
     text-decoration: underline;
     color: var(--text-gray);
+}
+
+.login_checkbox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: var(--sm);
+}
+
+.button_create {
+    width: 100%;
 }
 
 /** footer */
