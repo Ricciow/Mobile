@@ -45,12 +45,12 @@
 
     <main class="main_login">
         <form action="#" method="POST" aria-label="Formulario de login" class="login card">
-            <h2 class="subtitle">Entrar</h2>
-            <input type="email" placeholder="Email" name="email" class="card input" />
-            <input type="password" placeholder="Senha" name="password" class="card input" />
+            <h2 class="subtitle login_title">Entrar</h2>
+            <input type="email" placeholder="Email" name="email" class="card input login_input" />
+            <input type="password" placeholder="Senha" name="password" class="card input login_input" />
             <div class="login_buttons">
-                <button type="submit" class="button">Entrar</button>
-                <button type="button" class="button_inverse">
+                <button type="submit" class="button button_enter">Entrar</button>
+                <button type="button" class="button_inverse button_google">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="google_icon">
                         <g>
                             <path fill="#EA4335"
@@ -71,9 +71,9 @@
                     Entrar com Google
                 </button>
             </div>
-            <p>
+            <p class="login_links">
                 <a href="#" class="link">Esqueci a senha</a>
-                &bullet;
+                &ThinSpace;&bullet;&ThinSpace;
                 <a href="#" class="link">Criar conta</a>
             </p>
         </form>
