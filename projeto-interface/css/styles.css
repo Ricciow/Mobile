@@ -130,6 +130,7 @@ a {
 
 /* Input para uso geral*/
 .input {
+    border: none;
     background: none;
     flex: 1;
     padding: var(--sm);
@@ -233,10 +234,6 @@ header {
     padding: 0.1rem;
 
     box-shadow: none;
-}
-
-.search_input {
-    border: none;
 }
 
 .search_button {
@@ -647,6 +644,7 @@ main {
 }
 
 .login_input {
+    border: var(--border-width) solid var(--border-color);
     flex: none;
     width: 100%;
 }
