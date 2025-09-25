@@ -689,7 +689,10 @@ main {
 }
 
 .login_checkbox {
+    display: flex;
+    align-items: center;
     width: 100%;
+    gap: var(--sm);
 }
 
 .button_create {
