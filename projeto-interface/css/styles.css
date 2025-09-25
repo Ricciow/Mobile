@@ -360,6 +360,49 @@ main {
     border: var(--border-width) solid var(--button-primary);
     border-radius: var(--border-radius);
     margin-top: var(--md);
+    grid-template-areas: 
+        "cards"
+        "box";
+}
+
+.admin-cards{
+    grid-area: "cards";
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: stretch;
+    border: red solid;
+}
+
+.admin-box {
+    grid-area: "box";
+    display:flex;
+    grid-template-areas: 
+        "search"
+        "categories";
+    border: green;
+}
+
+.admin-box-search {
+    grid-area: "search";
+    flex-direction: column;
+    align-items: stretch;
+    border: var(--border-width) solid var(--button-primary);
+}
+
+.admin-card {
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    padding: 4%;
+
     
 }
 
