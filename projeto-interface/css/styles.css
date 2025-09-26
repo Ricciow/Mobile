@@ -333,18 +333,19 @@ main {
 
 /*Adiministrator pages*/
 .admin-page {
+    
     display: grid;
     grid-template-areas: 
+        "admin-aside admin-cards"
         "admin-aside admin-main";
     grid-template-columns: auto 0.9fr;
+    grid-template-rows: auto 1fr;
     box-sizing: border-box;
     margin-top: var(--md);
     gap: 10px;
     margin-left: var(--lg);
     margin-right: var(--lg);
-
-
-
+    
 }
 
 .admin-aside {
@@ -355,41 +356,42 @@ main {
 
 }
 
-.admin-main {
-    grid-area: admin-main;
-    border: var(--border-width) solid var(--button-primary);
-    border-radius: var(--border-radius);
-    margin-top: var(--md);
-    grid-template-areas: 
-        "cards"
-        "box";
-}
 
 .admin-cards{
-    grid-area: "cards";
+    grid-area: admin-cards;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
     align-items: stretch;
-    border: red solid;
+
 }
 
-.admin-box {
-    grid-area: "box";
-    display:flex;
+.admin-main {
+    grid-area: admin-main;
+    display:grid;
     grid-template-areas: 
         "search"
         "categories";
     border: green;
+    align-items: stretch;
+    border: var(--border-width) solid var(--button-primary);
+    border-radius: var(--border-radius);
+    margin-top: var(--md);
+    flex-direction: column;
+    width: 100%;
 }
 
 .admin-box-search {
     grid-area: "search";
-    flex-direction: column;
-    align-items: stretch;
+
     border: var(--border-width) solid var(--button-primary);
+    height: 100%;
+}
+
+.admin-categories{
+    grid-area: "categories"; 
 }
 
 .admin-card {
@@ -405,6 +407,7 @@ main {
 
     
 }
+
 
 
 /** footer */
