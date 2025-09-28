@@ -417,6 +417,83 @@ main {
     border-radius: var(--border-radius);    flex-direction: column;
     padding: var(--md);
 }
+
+/* Post creation  area*/
+.admin-subbox{
+    display: grid;
+    grid-template-areas:"subbox-search"
+                        "subbox-content"
+                        "subbox-extra-inputs"
+                        "subbox-buttons";
+    align-items: stretch;
+    border: 1px solid lightgray;
+    border-radius: var(--border-radius);    flex-direction: column;
+    padding: var(--md);
+    
+}
+
+.admin-subbox-search {
+    grid-area: subbox-search;
+    width: 100%;
+    height: 100%;
+}
+
+.admin-subbox-content {
+    grid-area: subbox-content;
+    width: 100%;
+    height: 100%;
+    margin-top: var(--md);
+    margin-bottom: var(--md);
+
+}
+
+.admin-subbox-extra-inputs {
+    grid-area: subbox-extra-inputs;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--sm);
+    width: 100%;
+    margin-bottom: var(--md);
+}
+.admin-subbox-extra-inputs .search-input,
+.admin-subbox-extra-inputs label {
+    flex: 1;                 
+    min-width: 0;            
+    box-sizing: border-box;  
+}
+.admin-subbox-buttons {
+    grid-area: subbox-buttons;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: var(--sm);
+    width: 100%;
+}
+
+.text-input {
+    border: 1px solid #e4e4e4;
+    border-radius: var(--border-radius);
+    outline: none;
+    width: 100%;
+    font-size: 0.6rem;
+    color: grey;
+    outline: none;
+    width: 100%;
+    height: 10rem;
+    padding: 0.7rem 0.7rem;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.text-input:focus {
+    border-color: lightgray;
+    box-shadow: 0 0 3px lightgray;
+}
+
+
  /*admin-header applicated to administrator pages regarding categories and editor's choice*/
 .admin-header {
     padding-top: 12px;
@@ -442,7 +519,6 @@ main {
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 4px; 
 }
-
 
 .admin-box-search {
     grid-area: "search";
@@ -482,6 +558,7 @@ main {
     flex: 1 1 20%;
     padding: 4%;
 }
+
 
  /*items-title applicated to administrator pages regarding categories and editor's choice*/
 .items-title {
