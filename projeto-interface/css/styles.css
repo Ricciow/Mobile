@@ -432,6 +432,17 @@ main {
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 4px; }
 
+ /*admin-header applicated to administrator pages regarding review lists*/
+.admin-header-review-pages {
+    padding-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px; 
+    gap: var(--md);
+    padding: 12px 6px 8px 6px; 
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 4px; 
+}
+
 
 .admin-box-search {
     grid-area: "search";
@@ -481,12 +492,14 @@ main {
     padding-bottom: 4px;
 }
 
- /*items-title applicated to administrator pages regarding users*/
+ /*items-title applicated to administrator pages regarding users and review lists*/
 .items-title-users-page {
     font-weight: bold;
     font-size: small;
     padding-bottom: 0;
 }
+ 
+
 
  /*admin-items applicated to administrator pages regarding categories and editor's choice*/
 .admin-items {
@@ -509,6 +522,17 @@ main {
     border-bottom: 1px solid #e0e0e0;
 }
 
+ /*admin-items applicated to administrator pages regarding review lists*/
+.admin-items-review-pages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    gap: var(--md);
+    align-items: center;
+    padding: 12px 6px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
 
 .admin-items-name {
     font-size: 75%;
@@ -519,10 +543,19 @@ main {
     border-bottom: none;
 }
 
+/*admin-items applied to category, and users page, due to only one button on last column*/
 .admin-items-actions {
     display: flex;
     gap: 10px;
 }
+
+/*admin-items applied to review lists pages, due to 2 buttons on last column*/
+.admin-items-actions-review-pages {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end; 
+}
+
 
 .admin-items-green-button {
     padding: 8px 16px;
@@ -544,7 +577,6 @@ main {
     cursor: pointer;
     transition: 0.2s;
     width: 6.5rem;
-
 }
 
 .admin-items-green-button:hover {
@@ -565,9 +597,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex-direction: column;
-
     background-color: var(--bg-color);
     border-top: var(--border-width) solid var(--border-color);
 
@@ -673,6 +703,31 @@ footer {
     .admin-card {
         width: 100%;
     }
+
+    .admin-header-review-pages,
+    .admin-items-review-pages {
+        grid-template-columns: 1fr 1fr 1fr 120px; 
+        justify-items: center; 
+        text-align: center;
+    }
+
+    .admin-items-review-pages {
+        align-items: center; 
+    }
+
+    .admin-items-actions-review-pages {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--sm);
+    }
+
+    .admin-items-green-button,
+    .admin-items-red-button {
+        width: 100px;
+        padding: 10px 8px; 
+    }
+
 }
 
 /* tablet */
