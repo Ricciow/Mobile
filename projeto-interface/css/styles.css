@@ -417,10 +417,20 @@ main {
     border-radius: var(--border-radius);    flex-direction: column;
     padding: var(--md);
 }
-
+ /*admin-header applicated to administrator pages regarding categories and editor's choice*/
 .admin-header {
     padding-top: 12px;
 }
+
+ /*admin-header applicated to administrator pages regarding users*/
+.admin-header-users-page {
+    padding-top: 12px;
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr 0.9fr 100px;
+    gap: var(--md);
+    padding: 12px 6px 8px 6px; 
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 4px; }
 
 
 .admin-box-search {
@@ -462,6 +472,7 @@ main {
     padding: 4%;
 }
 
+ /*items-title applicated to administrator pages regarding categories and editor's choice*/
 .items-title {
     font-weight: bold;
     font-size: small;
@@ -470,12 +481,30 @@ main {
     padding-bottom: 4px;
 }
 
+ /*items-title applicated to administrator pages regarding users*/
+.items-title-users-page {
+    font-weight: bold;
+    font-size: small;
+    padding-bottom: 0;
+}
+
+ /*admin-items applicated to administrator pages regarding categories and editor's choice*/
 .admin-items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: gray;
+    padding: 12px 6px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+ /*admin-items applicated to administrator pages regarding users*/
+.admin-items-users-page {
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr 0.9fr 100px;
+    gap: var(--md);
+    align-items: center;
     padding: 12px 6px;
     border-bottom: 1px solid #e0e0e0;
 }
@@ -495,7 +524,7 @@ main {
     gap: 10px;
 }
 
-.admin-items-edit-button {
+.admin-items-green-button {
     padding: 8px 16px;
     border: 1px solid #1abc9c;
     border-radius: 8px;
@@ -503,9 +532,10 @@ main {
     color: #1abc9c;
     cursor: pointer;
     transition: 0.3s;
+    width: 6.5rem;
 }
 
-.admin-items-exclude-button {
+.admin-items-red-button {
     padding: 8px 16px;
     border: 1px solid #1abc9c;
     border-radius: 8px;
@@ -513,14 +543,16 @@ main {
     color: #1abc9c;
     cursor: pointer;
     transition: 0.2s;
+    width: 6.5rem;
+
 }
 
-.admin-items-edit-button:hover {
+.admin-items-green-button:hover {
     background-color: #1abc9c;
     color: white;
 }
 
-.admin-items-exclude-button:hover {
+.admin-items-red-button:hover {
     border: 1px solid rgb(252, 119, 119);
     background-color: rgb(252, 119, 119);
     color: white;
