@@ -43,13 +43,15 @@
         </a>
     </header>
 
-    <main class="main_index">
-        <form action="./index.html" method="GET" aria-labelledby="sign_newsletter_title" class="sign_newsletter">
-            <h1 id="sign_newsletter_title" class="sign_newsletter_title">Assine a newsletter</h1>   
-            <input type="email" placeholder="E-mail" class="input_email" aria-label="Inserir e-mail" required/>
-            <input type="checkbox" class="newsletter_agreement_checkbox" aria-label="Concordar em assinar a newsletter" label="subscribeNewsletter" required/>  
+    <main class="main_newsletter">
+        <form action="./index.html" method="GET" aria-labelledby="newsletter_title" class="newsletter card">
+            <h1 id="sign_newsletter_title" class="newsletter_title">Assine a newsletter</h1>   
+            <input type="email" placeholder="E-mail" class="newsletter_input input" aria-label="Inserir e-mail" required/>
+        <div class="newsletter_agreement">           
+            <input type="checkbox" class="newsletter_checkbox" aria-label="Concordar em assinar a newsletter" label="subscribeNewsletter" required/>  
             <label for="subscribeNewsletter">Concordo em receber comunicações e li a política de privacidade</label> 
-            <button type="submit" class="sign_newsletter_button button" aria-label="Assinar newsletter">Assinar</button>      
+        </div>
+            <button type="submit" class="newsletter_button button" aria-label="Assinar newsletter">Assinar</button>      
         </form>
     </main>
 
