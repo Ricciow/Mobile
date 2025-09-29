@@ -362,7 +362,7 @@ main {
 }
 
 .h3-admin {
-    font-size: xx-small;
+    font-size: x-small;
     color: grey;
     text-justify: center;
 }
@@ -907,6 +907,6 @@ footer {
     .admin-card {
         flex: 1 1 calc(25% - 1rem);
         min-width: 200px;
-        max-width: 300px;
+        max-width: auto;
     }
 }
