@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"><a href="./index.html" aria-label="Ir para a home" class="logo_link">HABIT</a></h1>
+
+        <nav class="header_nav" aria-label="Menu principal">
+            <a href="#" class="header_link">Assinar</a>
+            <button class="menu_button" aria-label="Abrir Menu" aria-expanded="false" aria-controls="header_menu"
+                id="menu_hamburguer">
+                <img src="./assets/menu.svg" alt="menu" class="menu_icon">
+                <img src="./assets/close.svg" alt="fechar_menu" class="close_menu_icon">
+            </button>
+            <ul id="header_menu" class="header_menu">
+                <li><a href="./index.html" class="header_link">Início</a></li>
+                <li><a href="#" class="header_link">Páginas</a></li>
+                <li><a href="#" class="header_link">Destaques</a></li>
+                <li><a href="#" class="header_link">Admin</a></li>
+                <li><a href="./login.html" class="header_link profile_link_menu">Perfil</a></li>
+            </ul>
+        </nav>
+
+        <div class="search_area">
+            <form class="search card" action="#" method="GET" role="search" aria-label="Pesquisar no site">
+                <input type="text" placeholder="Pesquisar..." name="q" class="input search_input" />
+                <button type="submit" class="search_button" aria-label="Buscar">
+                    <img src="./assets/search.svg" alt="buscar" class="search_icon">
+                </button>
+            </form>
+        </div>
+
+        <a href="./login.html" aria-label="Acessar seu perfil" class="profile_link">
+            <img src="./assets/user.png" alt="Foto do perfil">
+        </a>
+    </header>
+
+
+    <main class="admin-page">
+        <aside class="admin-aside">
+            <p class="admin-box-titles">Menu</p>
+            <ul  class ="admin-ul">
+                <li><a class="admin-you-are-here" href="administrator-page-category.html">Categorias</a></li>
+                <li><a href="administrator-page-post.html">Criar Post</a></li>
+                <li><a href="administrator-page-editor-choice.html">Escolhas do Editor</a></li>
+                <li><a href="administrator-page-users.html">Usuários</a></li>
+                <li><a href="administrator-page-review-list-posts.html">Fila de Revisão</a></li>
+                <li><a href="administrator-page-review-comments.html">Fila de Comentários</a></li>
+            </ul>
+        </aside>
+            <section class="admin-cards">
+                <div class="admin-card">
+                    <h3 class = "h3-admin">Posts</h3>
+                    <h2 class = "h2-admin">128</h2>
+                </div>
+                <div class="admin-card">
+                    <h3 class = "h3-admin">Visualizações</h3>
+                    <h2 class = "h2-admin">54k</h2>
+                </div>
+                <div class="admin-card">
+                    <h3 class = "h3-admin">Inscritos</h3>
+                    <h2 class = "h2-admin">12k</h2>
+                </div>
+                <div class="admin-card">
+                    <h3 class = "h3-admin">Pendências</h3>
+                    <h2 class = "h2-admin">7</h2>
+                </div>
+            </section>
+
+            <section class ="admin-main">
+                <section>
+                    <p class="admin-box-titles">Categorias</p>
+                    
+                    <div class="admin-box-search">
+                        <input type="text" class="search-input" placeholder="Buscar categorias ...">
+                    </div>
+                    
+                    <div class = "admin-header">
+                        <p class="items-title">Categoria</p> 
+                    </div> 
+                    
+                    <div class="admin-items">
+                        <p class="admin-items-name">Categoria #1</p>
+                        <div class="admin-items-actions">
+                            <button class="admin-items-green-button">Editar</button>
+                            <button class="admin-items-red-button">Excluir</button>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-items">
+                        <p class="admin-items-name">Categoria #2</p>
+                        <div class="admin-items-actions">
+                            <button class="admin-items-green-button">Editar</button>
+                            <button class="admin-items-red-button">Excluir</button>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-items">
+                        <p class="admin-items-name">Categoria #3</p>
+                        <div class="admin-items-actions">
+                            <button class="admin-items-green-button">Editar</button>
+                            <button class="admin-items-red-button">Excluir</button>
+                        </div>
+                    </div>
+                    
+                    <div class="admin-items">
+                        <p class="admin-items-name">Categoria #4</p>
+                        <div class="admin-items-actions">
+                            <button class="admin-items-green-button">Editar</button>
+                            <button class="admin-items-red-button">Excluir</button>
+                        </div>
+                    </div>
+
+                </section>
+            </section>
+
+</main>
+
+
+
+    <footer>
+        <nav class="socials" aria-label="Redes sociais">
+            <a href="#" class="social_link" aria-label="Link para o Instagram">
+                <img src="./assets/instagram.svg" alt="Instagram" class="social_icon">
+            </a>
+            <a href="#" class="social_link" aria-label="Link para o Facebook">
+                <img src="./assets/facebook.svg" alt="Facebook" class="social_icon">
+            </a>
+            <a href="#" class="social_link" aria-label="Link para o Twitter">
+                <img src="./assets/twitter.svg" alt="Twitter" class="social_icon">
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="social_link" aria-label="Link para o YouTube">
+                <img src="./assets/youtube.svg" alt="YouTube" class="social_icon">
+            </a>
+            <a href="#" class="social_link" aria-label="Link para o LinkedIn">
+                <img src="./assets/linkedin.svg" alt="LinkedIn" class="social_icon">
+            </a>
+        </nav>
+        <p class="copyright">&copy; 2025 6G Mackenzie. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
