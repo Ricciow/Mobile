@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class>
+    <header>
+        <h1 class="logo"><a>HABIT</a></h1>
+
+        <nav class="header_nav" aria-label="Menu principal">
+            <a href="#" class="header_link">Assinar</a>
+            <button class="menu_button" aria-label="Abrir Menu" aria-expanded="false" aria-controls="header_menu"
+                id="menu_hamburguer">
+                <img src="./assets/menu.svg" alt="menu" class="menu_icon">
+                <img src="./assets/close.svg" alt="fechar_menu" class="close_menu_icon">
+            </button>
+            <ul id="header_menu" class="header_menu">
+                <li><a href="#" class="header_link">Inicio</a></li>
+                <li><a href="#" class="header_link">Paginas</a></li>
+                <li><a href="#" class="header_link">Destaques</a></li>
+                <li><a href="#" class="header_link">Admin</a></li>
+                <li><a href="#" class="header_link profile_link_menu">Perfil</a></li>
+            </ul>
+        </nav>
+
+        <form class="search card" action="#" method="GET" role="search" aria-label="Pesquisar no site">
+            <input type="text" placeholder="Pesquisar..." name="q" class="search_input" />
+            <button type="submit" class="search_button" aria-label="Buscar">
+                <img src="./assets/search.svg" alt="buscar" class="search_icon">
+            </button>
+        </form>
+
+        <a href="#" aria-label="Acessar seu perfil" class="profile_link">
+            <img src="./assets/user.png" alt="Foto do perfil">
+        </a>
+    </header>
+
+
+    <main class="admin-page">
+        <aside class="admin-aside">
+            <h2>Menu</h2>
+            <ul>
+                <li>Categorias</li>
+                <li>Criar Post</li>
+                <li>Usuários</li>
+                <li>Fila de Revisão</li>
+                <li>Fila de Comentários</li>
+            </ul>
+        </aside>
+        <section class ="admin-main">
+            <div class ="card">
+                <h3>Posts</h3>
+                <h2>128</h2>
+            </div>
+            <div class = "card">
+                <h3>Visualizações</h3>
+                <h2>54k</h2>
+            </div>
+            <div class ="card">
+                <h3>Inscritos</h3>
+                <h2>12k</h2>
+            </div>
+            <div class ="card">
+                <h3>Pendências</h3>
+                <h2>7</h2>
+            </div>
+        </section>
+
+        <section class="admin-main">
+            <h2>Categorias</h2>
+            <div>Buscar categorias ...</div>
+            <h3>Categoria</h3>
+            <h4>Categoria #1</h4>
+            <h4>Categoria #2</h4>
+            <h4>Categoria #3</h4>
+            <h4>Categoria #4</h4>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <nav class="socials" aria-label="Redes sociais">
+            <a href="#" class="social_link" aria-label="Link para o Instagram">
+                <img src="./assets/instagram.svg" alt="Instagram" class="social_icon">
+            </a>
+            <a href="#" class="social_link" aria-label="Link para o Facebook">
+                <img src="./assets/facebook.svg" alt="Facebook" class="social_icon">
+            </a>
+            <a href="#" class="social_link" aria-label="Link para o Twitter">
+                <img src="./assets/twitter.svg" alt="Twitter" class="social_icon">
+            </a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="social_link" aria-label="Link para o YouTube">
+                <img src="./assets/youtube.svg" alt="YouTube" class="social_icon">
+            </a>
+            <a href="#" class="social_link" aria-label="Link para o LinkedIn">
+                <img src="./assets/linkedin.svg" alt="LinkedIn" class="social_icon">
+            </a>
+        </nav>
+        <p class="copyright">&copy; 2025 6G Mackenzie. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
