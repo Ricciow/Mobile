@@ -330,6 +330,30 @@ main {
 
 
 
+.main_pessoa {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "aside";
+    gap: 5px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.pessoa {
+    display: grid;
+    grid-area: aside;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color-secondary);
+
+}
+
+
 
 
 
