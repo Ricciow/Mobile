@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./js/script.js" defer></script>
+    <script src="./js/categories.js" defer></script>
 </head>
 
 <body>
@@ -21,14 +21,14 @@
                 <img src="./assets/close.svg" alt="fechar_menu" class="close_menu_icon">
             </button>
             <ul id="header_menu" class="header_menu">
-                <li><a href="./index.html" class="header_link">Inicio</a></li>
-                <li><a href="#" class="header_link">Paginas</a></li>
+                <li><a href="./index.html" class="header_link">Início</a></li>
+                <li><a href="#" class="header_link">Páginas</a></li>
                 <li><a href="./categories.html?category=Destaques" class="header_link">Destaques</a></li>
-                <li><a href="#" class="header_link">Admin</a></li>
+                <li><a href="./administrator-page-category.html" class="header_link">Admin</a></li>
                 <li><a href="./login.html" class="header_link profile_link_menu">Perfil</a></li>
             </ul>
         </nav>
-
+        
         <div class="search_area">
             <form class="search card" action="#" method="GET" role="search" aria-label="Pesquisar no site">
                 <input type="text" placeholder="Pesquisar..." name="q" class="input search_input" />
@@ -43,19 +43,18 @@
         </a>
     </header>
 
-    <main class="main_login">
-        <form action="./login.html" method="GET" aria-label="Formulario de cadastro" class="login card">
-            <h2 class="subtitle login_title">Criar Conta</h2>
-            <input type="text" placeholder="Nome" name="nome" class="card input login_input" required/>
-            <input type="email" placeholder="Email" name="email" class="card input login_input" required/>
-            <input type="password" placeholder="Senha" name="password" class="card input login_input" required/>
-            <input type="password" placeholder="Confirmar Senha" name="password_confirm" class="card input login_input" required/>
-            <div class="login_checkbox">
-                <input type="checkbox" name="termos" id="terms" required>
-                <label for="terms">Concordo com os termos e a politica de privacidade</label>
-            </div>
-            <button type="submit" class="button button_create">Cadastrar</button>
-        </form>
+    <main class="main_categories">
+        <h1 class="category_page_title" id="category_page_title">Categoria:Nada</h1>
+        <nav class="category_filter" id="category_filter" aria-label="filtro de categorias">
+            <button class="category_filter_type card">Popular</button>
+            <button class="category_filter_type card">Mais recentes</button>
+            <button class="category_filter_type card">IA</button>
+            <button class="category_filter_type card">Produtividade</button>
+        </nav>
+        <section class="category_posts" id="category_posts">
+            <!-- cards dos posts -->
+        </section>
+        <button class="load_posts_button button" id="load_posts_button" aria-controls="category_posts">Carregar mais</button>
     </main>
 
     <footer>
