@@ -424,17 +424,20 @@ main {
     margin-bottom: 10px;
 }
 
-.h3-admin {
+
+
+.h2-admin {
     font-size: x-small;
-    color: grey;
+    color: #595959;
     text-justify: center;
 }
 
-.h2-admin {
-    font-size: large;
+.h3-admin {
+    font-size: x-large;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 3px;
 }
+
 
 .admin-ul {
     max-width: 100%;
@@ -444,12 +447,20 @@ main {
     box-sizing: border-box;
 }
 
+.admin-ul li {
+    margin-bottom: 3px;
+}
+
 .admin-ul li a {
     display: inline-block; 
     text-decoration: none; 
     font-size: small;
     color:#000000;
     transition: color 0.2s ease, text-decoration 0.2s ease;
+    padding: 10px 12px;
+    min-height: 44px; 
+    width: 100%;
+    box-sizing: border-box; 
 }
 
 .admin-you-are-here {
@@ -607,7 +618,7 @@ main {
     outline: none;
     width: 100%;
     font-size: 0.6rem;
-    color: grey;
+    color: #595959;
     outline: none;
     width: 100%;
     padding: 0.7rem 0.7rem;
@@ -625,7 +636,7 @@ main {
 }
 
 .admin-card {
-    border: 1px solid lightgray;
+    border: 1px solid #d3d3d3;
     border-radius: var(--border-radius);
     background-color: white;
     display: flex;
@@ -712,10 +723,10 @@ main {
 
 .admin-items-green-button {
     padding: 8px 16px;
-    border: 1px solid #1abc9c;
+    border: 1px solid #0C6452;
     border-radius: 8px;
     background-color: white;
-    color: #1abc9c;
+    color: #0C6452;
     cursor: pointer;
     transition: 0.3s;
     width: 6.5rem;
@@ -723,23 +734,23 @@ main {
 
 .admin-items-red-button {
     padding: 8px 16px;
-    border: 1px solid #1abc9c;
+    border: 1px solid #0C6452;
     border-radius: 8px;
     background-color: white;
-    color: #1abc9c;
+    color: #0C6452;
     cursor: pointer;
     transition: 0.2s;
     width: 6.5rem;
 }
 
 .admin-items-green-button:hover {
-    background-color: #1abc9c;
+    background-color: #0C6452;
     color: white;
 }
 
 .admin-items-red-button:hover {
-    border: 1px solid rgb(252, 119, 119);
-    background-color: rgb(252, 119, 119);
+    border: 1px solid #ED0303;
+    background-color: #ED0303;
     color: white;
 }
 
