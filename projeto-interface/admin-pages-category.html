@@ -9,8 +9,8 @@
 </head>
 
 <body class>
-    <header>
-        <h1 class="logo"><a>HABIT</a></h1>
+<header>
+        <h1 class="logo"><a href="./index.html" aria-label="Ir para a home" class="logo_link">HABIT</a></h1>
 
         <nav class="header_nav" aria-label="Menu principal">
             <a href="./newsletter.html" class="header_link">Assinar</a>
@@ -20,28 +20,28 @@
                 <img src="./assets/close.svg" alt="fechar_menu" class="close_menu_icon">
             </button>
             <ul id="header_menu" class="header_menu">
-                <li><a href="#" class="header_link">Inicio</a></li>
-                <li><a href="#" class="header_link">Paginas</a></li>
-                <li><a href="#" class="header_link">Destaques</a></li>
-                <li><a href="#" class="header_link">Admin</a></li>
-                <li><a href="#" class="header_link profile_link_menu">Perfil</a></li>
-                <li><a href="./posts.html" class="header_link">posts</a></li>
-                <li><a href="./busca.html" class="header_link">busca</a></li>
+                <li><a href="./index.html" class="header_link">Início</a></li>
+                <li><a href="#" class="header_link">Páginas</a></li>
+                <li><a href="./categories.html?category=Destaques" class="header_link">Destaques</a></li>
+                <li><a href="./administrator-page-category.html" class="header_link">Admin</a></li>
+                <li><a href="./login.html" class="header_link profile_link_menu">Perfil</a></li>
+                <li><a href="./posts.html" class="header_link">Posts</a></li>
             </ul>
         </nav>
 
-        <form class="search card" action="#" method="GET" role="search" aria-label="Pesquisar no site">
-            <input type="text" placeholder="Pesquisar..." name="q" class="search_input" />
-            <button type="submit" class="search_button" aria-label="Buscar">
-                <img src="./assets/search.svg" alt="buscar" class="search_icon">
-            </button>
-        </form>
+        <div class="search_area">
+            <form  action="./busca.html" class="search card" action="#" method="GET" role="search" aria-label="Pesquisar no site">
+                <input type="text" placeholder="Pesquisar..." name="q" class="input search_input" />
+                <button type="submit" class="search_button" aria-label="Buscar" >
+                    <img src="./assets/search.svg" alt="buscar" class="search_icon">
+                </button>
+            </form>
+        </div>
 
-        <a href="#" aria-label="Acessar seu perfil" class="profile_link">
+        <a href="./login.html" aria-label="Acessar seu perfil" class="profile_link">
             <img src="./assets/user.png" alt="Foto do perfil">
         </a>
     </header>
-
 
     <main class="admin-page">
         <aside class="admin-aside">
