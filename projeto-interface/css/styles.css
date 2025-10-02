@@ -1269,7 +1269,7 @@ footer {
 
 }
 
-.img{
+.img {
     display: grid;
     grid-area: img;
     margin: 10px;
@@ -1281,7 +1281,7 @@ footer {
 }
 
 
-.nome{
+.nome {
     display: grid;
     grid-area: nome;
     margin: 10px;
@@ -1290,7 +1290,7 @@ footer {
     background-color: var(--bg-color-secondary);
 }
 
-.desc{
+.desc {
     display: grid;
     grid-area: desc;
     margin: 10px;
@@ -1300,19 +1300,26 @@ footer {
 }
 
 
-.posts{
+.posts {
     display: grid;
     grid-area: posts;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
+        "headd"
         "postss";
     gap: 5px;
     margin: 10px;
 
 }
 
-.postss{
+.headd{
+    display: grid;
+    grid-area: postss;
+}
+
+
+.postss {
     display: grid;
     grid-area: postss;
 
@@ -1331,6 +1338,7 @@ footer {
     border-radius: var(--border-radius);
     padding: calc(var(--sm) + var(--border-width)) calc(var(--md) + var(--border-width));
     font-size: var(--font-normal);
+    height: 50px;
 
 }
 
