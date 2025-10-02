@@ -1304,7 +1304,7 @@ footer {
     display: grid;
     grid-area: posts;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 60px 1fr;
     grid-template-areas:
         "headd"
         "postss";
@@ -1315,13 +1315,50 @@ footer {
 
 .headd{
     display: grid;
-    grid-area: postss;
+    grid-area: headd;
 }
 
 
 .postss {
     display: grid;
     grid-area: postss;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.posts_card {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "imagem found";
+
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    gap: 80px;
+    width: auto;
+    height: 100px;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color-secondary);
+
+
+}
+
+
+.posts_image {
+    grid-area: imagem;
+    align-items: center;
+    justify-content: left;
+    width: 100px;
+    height: 80px;
+    background-color: rgb(157, 172, 170);
+    margin: 10px;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: #f4fafc;
 
 }
 
@@ -1347,9 +1384,6 @@ footer {
     border: var(--border-width) solid var(--button-hover);
     padding: var(--sm) var(--md);
 }
-
-
-
 
 
 
